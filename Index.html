@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form id="Orden">
+		<table>
+			<tr>
+				<td>
+					<h2>Restaurante</h2>
+					<h3>Lista de combos</h3>
+					<label><input type="radio" name="combo" value="7.25" checked="checked">Combo Grande</label>
+					<label><input type="radio" name="combo" value="5.75">Combo Personal</label>
+					<label><input type="radio" name="combo" value="3.50">Menú infantil</label>
+					<input type="hidden" name="Combo_total" value="0.00" id="Combo_total">
+				</td>
+			</tr>
+			<tr>
+				<td><label>Cantidad de combos</label></td>
+			</tr>
+			<tr>
+				<td>	
+						<input type="number" name="Cantidad"id="Cantidad" value="1">
+				</td>
+			</tr>
+			<p id="Complementos">
+				Complementos:
+			<tr>
+				<td>
+					<label><input type="checkbox" name="" value="1.50">Ensalada</label>
+					<label><input type="checkbox" name="" value="1.25">Papa frita</label>
+					<label><input type="checkbox" name="" value="1.75">Pieza de pollo grande</label>
+					<label><input type="checkbox" name="" value="1.50">Pieza de pollo mediana</label>
+					<label><input type="checkbox" name="" value="1.25">Pieza de pollo pequeña</label>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label><input type="checkbox" name="" value="1.50">Bebida Grande</label>
+					<label><input type="checkbox" name="" value="1.25">Bebida Mediana</label>
+					<label><input type="checkbox" name="" value="1">Bebida pequeña</label>
+					<label><input type="checkbox" name="" value="0.50">Café</label>
+					<label><input type="checkbox" name="" value="1.25">Postre</label>
+					<input type="hidden" name="Complementos_total" value="0.00">
+				</td>
+			</tr>
+			</p>
+			<tr>
+				<td><label>Precio: $</label><input type="text" name="" id="Total_Orden" readonly="readonly"></td>
+			</tr>
+			<tr>
+				<td>
+					<textarea>	
+					</textarea>
+				</td>
+			</tr>
+			<tr>
+				<td><input type="button" name="" id="Enviar" value="Realizar orden"></td>
+			</tr>
+		</table>
+		<p>Desea añadir Comentarios</p>
+        <input type="button" class="button" value="Añadir comentarios" id="btnComentario">
+        <div class="content" id="divtext" >
+            <textarea name="" id="" cols="60" rows="10" placeholder="Comentarios o indicaciones"></textarea>
+        </div>
+	</form>
+</body>
+<script type="text/javascript" src="js/orden.js"></script>
+</html>
