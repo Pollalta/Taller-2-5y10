@@ -2,13 +2,15 @@
 <html>
 <head>
 	<title></title>
+	<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 </head>
-<body>
-	<form id="Orden">
+<body class="h-100 row align-items-center">
+	<h2>Restaurante</h2>
+	<form id="Orden" class="bg-light justify-content-center form-group">
 		<table>
 			<tr>
 				<td>
-					<h2>Restaurante</h2>
 					<h3>Lista de combos</h3>
 					<label><input type="radio" name="combo" value="7.25" checked="checked">Combo Grande</label>
 					<label><input type="radio" name="combo" value="5.75">Combo Personal</label>
@@ -24,8 +26,6 @@
 						<input type="number" name="Cantidad"id="Cantidad" value="1">
 				</td>
 			</tr>
-			<p id="Complementos">
-				Complementos:
 			<tr>
 				<td>
 					<label><input type="checkbox" name="" value="1.50">Ensalada</label>
@@ -50,10 +50,6 @@
 				<td><label>Precio: $</label><input type="text" name="" id="Total_Orden" readonly="readonly"></td>
 			</tr>
 			<tr>
-				<td>
-					<textarea>	
-					</textarea>
-				</td>
 			</tr>
 			<tr>
 				<td><input type="button" name="" id="Enviar" value="Realizar orden"></td>
